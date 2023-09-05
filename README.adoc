@@ -1,0 +1,87 @@
+= E-Learning Platform
+
+E-Learning platform for linking students and teachers through a robust content management system.
+
+== Table of Contents
+
+- <<#project-overview,Project Overview>>
+- <<#features,Features>>
+- <<#getting-started,Getting Started>>
+  - <<#prerequisites,Prerequisites>>
+  - <<#installation,Installation>>
+- <<#usage,Usage>>
+- <<#configuration,Configuration>>
+- <<#contributing,Contributing>>
+- <<#license,License>>
+- <<#acknowledgments,Acknowledgments>>
+
+== Project Overview
+
+Online learning platform for teachers and students supporting seamless functionalities of education systems.
+
+== Features
+
+The following features are present in this project:
+
+- Content management system (CMS)
+- Course content and modules
+- Users authentication
+- Browsable course application programming interface (API)
+
+== Getting Started
+
+In your local machine, clone the project and . Include any necessary steps, commands, or configurations.
+
+=== Prerequisites
+
+The following is required to run this project.
+
+Example:
+
+* Python 3.10+
+* Django 4.2+
+* PostgreSQL 15+
+* Pipenv package manager
+
+=== Installation
+
+TBD.
+
+1. Clone the repository: `git clone https://github.com/yourusername/project-name.git`
+2. Navigate to the project directory: `cd project-name`
+3. Create a virtual environment: `python -m venv venv`
+4. Activate the virtual environment:
+   - On Windows: `venv\Scripts\activate`
+   - On macOS and Linux: `source venv/bin/activate`
+5. Install project dependencies: `pip install -r requirements.txt`
+6. Perform database migrations: `python manage.py migrate`
+7. Start the development server: `python manage.py runserver`
+
+== Usage
+
+TBD
+
+== Configuration
+
+TBD
+
+Example:
+
+- `DEBUG`: Set to `True` for development, `False` for production.
+- `SECRET_KEY`: Django secret key for security. Keep this secret!
+- `DATABASE_URL`: URL of the database connection.
+- ...
+
+== Contributing
+
+TBD
+
+== License
+
+Ssee the link:LICENSE[LICENSE] file for details.
+
+== Acknowledgments
+
+Reference resources, libraries, or tools used here and inspirations in the development of this project include:
+
+-
