@@ -1,0 +1,38 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Use spaces instead of tabs for indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Use spaces for indentation in HTML, XML, and Django templates
+[*.html]
+indent_style = space
+indent_size = 4
+
+# Trim trailing whitespaces in all files
+[*]
+trim_trailing_whitespace = true
+
+# Ensure a single blank line at the end of the file
+[*]
+ensure_newline_at_eof = true
+
+# Max line length, 79 characters is recommended for PEP 8 compliance
+[*.{py,html,css,scss,sass,js,json,yml}]
+max_line_length = 79
+
+# Exclude some directories and files
+[**/__pycache__]
+exclude_patterns = __init__.py
+
+[**/migrations/]
+exclude_patterns = __init__.py
