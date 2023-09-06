@@ -5,7 +5,7 @@
     <option name="enabledOnSave" value="true" />
     <option name="executionMode" value="BINARY" />
     <option name="pathToExecutable" value="$USER_HOME$/.local/bin/black" />
-    <option name="sdkUUID" value="5a4274c1-8621-4dda-9f15-d00247036aa7" />
+    <option name="sdkUUID" value="73a4e843-7549-4c11-96ee-9e3bf959301a" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Pipenv (e-learning-platform)" project-jdk-type="Python SDK" />
 </project>
