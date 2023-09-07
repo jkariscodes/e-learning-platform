@@ -22,21 +22,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-d09tjk11zhghahycphi*@0_g)cdesz_6m_px^teistfh%u#(lm"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = [
+    "courses.apps.CoursesConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Local
-    "courses.apps.CoursesConfig",
 ]
 
 MIDDLEWARE = [
@@ -120,6 +119,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGIN_REDIRECT_URL = 'login/'
-#LOGOUT_REDIRECT_URL = '/'
-
+LOGIN_REDIRECT_URL = "login/"
+LOGOUT_REDIRECT_URL = "logout"
