@@ -1,3 +1,4 @@
+from typing import Any, Dict
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -9,6 +10,13 @@ from django.forms.models import modelform_factory
 from django.apps import apps
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 from .models import Course, Module, Content
+from django.db.models import Count
+from .models import Subject
+from django.views.generic.detail import DetailView
+from students.forms import CourseEnrollForm
+from django.core.cache import cache
+
+
 
 
 class OwnerMixin:
@@ -160,3 +168,37 @@ class ContentOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
             )
 
         return self.render_json_response({"saved": "OK"})
+    
+class CourseListView (TemplateResponseMixin,View):
+    model = Course
+    template_name = 'courses/course/list.html'
+    def get (self,request,subject=None):
+        subjects = cache.get('all_subjects')
+        if not subjects:
+            subjects = Subject.objects.annotate(
+                total_courses = Count('courses')
+            )
+        cache.set('all_subjects',subjects)
+        courses = Course.objects.annotate( total_module = Count('modules'))
+
+
+
+        if subject:
+            subject = get_object_or_404(Subject, slug=subject)
+            courses = courses.filter(subject=subject)
+        
+        return self.render_to_response({subject:subject,
+                                        subjects:subjects,
+                                        courses:courses})
+    
+
+class CourseDetailView(DetailView):
+    model = Course
+    template_name = 'courses/course/detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context ['enroll_form'] = CourseEnrollForm(
+            initial={'course':self.object }
+        )
+        return context 
