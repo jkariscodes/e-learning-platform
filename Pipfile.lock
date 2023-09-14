@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c684f68d775bb570a516de7b170f9d4ceaa3e4c9aad196b22d577076947e1b74"
+            "sha256": "93a381a494b6e58a7cd1367f5f84ec921a1a4a5be831d93e834f9ade8ea85246"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -126,7 +126,7 @@
                 "sha256:f779d3ad205f108d14e99bb3859aa7dd8e9c68874617c72354d7ecaec2a054ac",
                 "sha256:f87f746ee241d30d6ed93969de31e5ffd09a2961a051e60ae6bddde9ec3583aa"
             ],
-            "markers": "python_full_version >= '3.7.0'",
+            "markers": "python_version >= '3.7'",
             "version": "==3.2.0"
         },
         "dj-database-url": {
@@ -143,7 +143,6 @@
                 "sha256:b6b2b5cae821077f137dc4dade696a1c2aa292f892eca28fa8d7bfdf2608ddd4"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==4.2.5"
         },
         "django-braces": {
@@ -168,7 +167,6 @@
                 "sha256:f32a87aa0899894c27d4e1776fa6b477e8164ed7f6b3e410a62a6d72caaf64be"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.6' and python_version < '4'",
             "version": "==0.11.2"
         },
         "django-redisboard": {
@@ -177,7 +175,6 @@
                 "sha256:f0632e8c772159245ddf0deed5554734c2d295c9e4f871557deafd9c2a4b126c"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7'",
             "version": "==8.3.1"
         },
         "djangorestframework": {
@@ -186,7 +183,6 @@
                 "sha256:eb63f58c9f218e1a7d064d17a70751f528ed4e1d35547fdade9aaf4cd103fd08"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.6'",
             "version": "==3.14.0"
         },
         "drf-spectacular": {
@@ -195,7 +191,6 @@
                 "sha256:afeccc6533dcdb4e78afbfcc49f3c5e9c369aeb62f965e4d1a43b165449c147a"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.6'",
             "version": "==0.26.4"
         },
         "idna": {
@@ -229,14 +224,6 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==2023.7.1"
-        },
-        "packaging": {
-            "hashes": [
-                "sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61",
-                "sha256:a392980d2b6cffa644431898be54b0045151319d1e7ec34f0cfed48767dd334f"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==23.1"
         },
         "pillow": {
             "hashes": [
@@ -298,7 +285,6 @@
                 "sha256:faaf07ea35355b01a35cb442dd950d8f1bb5b040a7787791a535de13db15ed90"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==10.0.0"
         },
         "psycopg": {
@@ -307,7 +293,6 @@
                 "sha256:8bbeddae5075c7890b2fa3e3553440376d3c5e28418335dee3c3656b06fa2b52"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7'",
             "version": "==3.1.10"
         },
         "psycopg-binary": {
@@ -368,7 +353,6 @@
                 "sha256:ffc8c796194f23b9b07f6d25f927ec4df84a194bbc7a1f9e73316734eef512f9"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7'",
             "version": "==3.1.10"
         },
         "pymemcache": {
@@ -444,12 +428,11 @@
         },
         "redis": {
             "hashes": [
-                "sha256:1ea4018b8b5d8a13837f0f1c418959c90bfde0a605cb689e8070cff368a3b177",
-                "sha256:7a462714dcbf7b1ad1acd81f2862b653cc8535cdfc879e28bf4947140797f948"
+                "sha256:68226f7ede928db8302f29ab088a157f41061fa946b7ae865452b6d7838bbffb",
+                "sha256:da92a39fec86438d3f1e2a1db33c312985806954fe860120b582a8430e231d8f"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.6'",
-            "version": "==4.3.6"
+            "version": "==4.4.4"
         },
         "referencing": {
             "hashes": [
@@ -646,7 +629,6 @@
                 "sha256:fb074d8b213749fa1d077d630db0d5f8cc3b2ae63587ad4116e8a436e9bbe995"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==23.7.0"
         },
         "click": {
@@ -713,7 +695,6 @@
                 "sha256:f4f456590eefb6e1b3c9ea6328c1e9fa0f1006e7481179d749b3376fc793478e"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==7.3.1"
         },
         "django": {
@@ -722,7 +703,6 @@
                 "sha256:b6b2b5cae821077f137dc4dade696a1c2aa292f892eca28fa8d7bfdf2608ddd4"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==4.2.5"
         },
         "django-debug-toolbar": {
@@ -731,7 +711,6 @@
                 "sha256:bc7fdaafafcdedefcc67a4a5ad9dac96efd6e41db15bc74d402a54a2ba4854dc"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==4.2.0"
         },
         "exceptiongroup": {
@@ -748,7 +727,6 @@
                 "sha256:e2722fdf622cf24e974aaba15a3dee97a6f8b98d869bd827ff1af9c87695af46"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.8'",
             "version": "==19.3.1"
         },
         "iniconfig": {
@@ -805,7 +783,6 @@
                 "sha256:a766259cfab564a2ad52cb1aae1b881a75c3eb7e34ca3779697c23ed47c47069"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7'",
             "version": "==7.4.2"
         },
         "pytest-django": {
@@ -814,7 +791,6 @@
                 "sha256:d9076f759bb7c36939dbdd5ae6633c18edfc2902d1a69fdbefd2426b970ce6c2"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.5'",
             "version": "==4.5.2"
         },
         "python-dateutil": {
