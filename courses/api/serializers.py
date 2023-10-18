@@ -45,5 +45,3 @@ class CourseWithContentsSerializer(
         fields = ['id', 'subject', 'title', 'slug',
 'overview', 'created', 'owner',
 'modules']
-
-

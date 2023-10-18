@@ -53,5 +53,3 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
     )
     def contents(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
-
-
