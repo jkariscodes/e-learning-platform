@@ -21,6 +21,18 @@ services:
     ports:
       - "5432:5432"
 
+  redis:
+    image: redis:latest
+    container_name: redis4${COMPOSE_PROJECT_NAME}
+    ports:
+      - "6379:6379"
+
+#  memcached:
+#    image: memcached
+#    container_name: memcached4${COMPOSE_PROJECT_NAME}
+#    ports:
+#      - "11211:11211"
+
   django:
     build:
       context: .
@@ -28,6 +40,7 @@ services:
     container_name: django4${COMPOSE_PROJECT_NAME}
     command: python /home/app/eapp/manage.py runserver 0.0.0.0:8000
     volumes:
+      - ./:/home/app/eapp
       - static_volume:/home/app/eapp/staticfiles
       - media_volume:/home/app/eapp/mediafiles
     ports:
@@ -36,14 +49,15 @@ services:
       - .env
     environment:
       - DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${DB_NAME}
-#      - DJANGO_SETTINGS_MODULE=ed_system.settings.local
+    #      - DJANGO_SETTINGS_MODULE=ed_system.settings.local
     depends_on:
       database:
         condition: service_healthy
+#      memcached:
+#        condition: service_started
+      redis:
+        condition: service_started
     restart: always
-
-#  redis:
-    #TODO
 
 volumes:
   postgres_data:
