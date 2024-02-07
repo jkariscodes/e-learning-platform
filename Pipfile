@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "~=4.2.7"
+django = "~=4.2.10"
 pillow = "~=10.1.0"
 dj-database-url = "~=2.1.0"
 django-environ = "~=0.11.2"
